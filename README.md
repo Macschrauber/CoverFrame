@@ -4,6 +4,8 @@
 
 ![Stargazer time synced](screenshots/stargaizer%20time%20synced.png)
 
+![Master of Puppets in file browsing](screenshots/Master_directory.png)
+
 CoverFrame transforms any old display device—iPad, Android tablet, old iPhone, or spare monitor—into a beautiful, living album artwork frame that syncs with your music playback. Watch your album covers come alive with synchronized lyrics, track information, and stunning visuals.
 
 ## What It Does
