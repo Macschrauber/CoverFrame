@@ -227,7 +227,7 @@ brew install imagemagick
 
 ## License
 
-[Your License Here]
+MIT license
 
 ## Author
 
@@ -242,8 +242,8 @@ Macschrauber (known for Macschrauber's Rom Dump, the major firmware tool for Int
 ## Support
 
 For issues, questions, or contributions:
-- **Issues**: [GitHub Issues](your-repo-url/issues)
-- **Discussions**: [GitHub Discussions](your-repo-url/discussions)
+- **Issues**: [GitHub Issues](https://github.com/Macschrauber/CoverFrame/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/Macschrauber/CoverFrame/discussions)
 
 ---
 
