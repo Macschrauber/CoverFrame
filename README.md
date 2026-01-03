@@ -223,7 +223,7 @@ brew install imagemagick
 1. Verify same Wi-Fi network
 2. Check firewall settings on macOS
 3. Try `http://IP:8000` instead of hostname
-4. For iOS 9.3-11, use `indexios4.html`
+4. For pre iOS 9.3-11, use `indexios4.html`
 
 ## License
 
