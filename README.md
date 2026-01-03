@@ -2,7 +2,7 @@
 
 **Turn your old iPad or other display device into a living album cover artwork frame**
 
-![CoverFrame Screenshot](screenshots/stargaizer time synced.png)
+![Stargazer time synced](screenshots/stargaizer%20time%20synced.png)
 
 CoverFrame transforms any old display device—iPad, Android tablet, old iPhone, or spare monitor—into a beautiful, living album artwork frame that syncs with your music playback. Watch your album covers come alive with synchronized lyrics, track information, and stunning visuals.
 
