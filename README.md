@@ -105,7 +105,7 @@ Most users won't need Genius - the included sources cover most songs with time-s
 - Background blur effects
 
 ### Lyrics Engine
-- Fetches lyrics from ID3 tags
+- Fetches lyrics from ID3 tags or local cache folder
 - Time-synchronized display
 - Manual calibration tools
 - Page navigation for long lyrics
@@ -189,7 +189,6 @@ CoverFrame is designed with these principles:
 - **Manual Organization**: No iTunes/Music.app database integration
 - **Same Network**: Requires server and display on same Wi-Fi
 - **Vox Player**: Best experience with Vox (other players via scripts)
-- **ID3 Tags**: Lyrics must be embedded in music files
 
 ## Troubleshooting
 
