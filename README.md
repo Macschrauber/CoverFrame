@@ -240,6 +240,8 @@ Macschrauber (known for Macschrauber's Rom Dump, the major firmware tool for Int
 - Built with love for music lovers who appreciate album art
 - Inspired by the desire to give old devices new life
 - Thanks to the open-source community for ImageMagick, kid3, and jq
+- For those who care: used AI. Perplexity, Claude, chatgpt, Gemini
+- Documentation and summaries are written by Claude. We are in 2026.
 
 ## Support
 
