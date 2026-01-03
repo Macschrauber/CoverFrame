@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="2048" height="1536" viewBox="0 0 2048 1536" xmlns="http://www.w3.org/2000/svg">
+  <rect width="2048" height="1536" fill="#1a1a1a"/>
+  <text x="1024" y="120" font-family="Helvetica, Arial, sans-serif" font-size="80" font-weight="bold" fill="#ffcc00" text-anchor="middle">CoverFrame Raccourcis Clavier</text>
+  <text x="1024" y="250" font-family="Helvetica, Arial, sans-serif" font-size="52" font-weight="bold" fill="#ffcc00" text-anchor="middle">CONTRÔLES DE LECTURE</text>
+  <g transform="translate(300, 320)">
+    <text x="0" y="0" font-family="Monaco, Courier, monospace" font-size="40" fill="#ff69b4" font-weight="bold">Espace</text>
+    <text x="350" y="0" font-family="Helvetica, Arial, sans-serif" font-size="36" fill="#fff">Pause / Lecture</text>
+    <text x="0" y="70" font-family="Monaco, Courier, monospace" font-size="40" fill="#ff69b4" font-weight="bold">←</text>
+    <text x="350" y="70" font-family="Helvetica, Arial, sans-serif" font-size="36" fill="#fff">Piste précédente (ou page paroles bas)</text>
+    <text x="0" y="140" font-family="Monaco, Courier, monospace" font-size="40" fill="#ff69b4" font-weight="bold">→</text>
+    <text x="350" y="140" font-family="Helvetica, Arial, sans-serif" font-size="36" fill="#fff">Piste suivante (ou page paroles haut)</text>
+    <text x="0" y="210" font-family="Monaco, Courier, monospace" font-size="40" fill="#90ee90" font-weight="bold">Shift + ←</text>
+    <text x="350" y="210" font-family="Helvetica, Arial, sans-serif" font-size="36" fill="#fff">Reculer de 15 secondes</text>
+    <text x="0" y="280" font-family="Monaco, Courier, monospace" font-size="40" fill="#90ee90" font-weight="bold">Shift + →</text>
+    <text x="350" y="280" font-family="Helvetica, Arial, sans-serif" font-size="36" fill="#fff">Avancer de 15 secondes</text>
+    <text x="0" y="350" font-family="Monaco, Courier, monospace" font-size="40" fill="#90ee90" font-weight="bold">Alt + ←</text>
+    <text x="350" y="350" font-family="Helvetica, Arial, sans-serif" font-size="36" fill="#fff">Reculer de 15 secondes (alternatif)</text>
+    <text x="0" y="420" font-family="Monaco, Courier, monospace" font-size="40" fill="#90ee90" font-weight="bold">Alt + →</text>
+    <text x="350" y="420" font-family="Helvetica, Arial, sans-serif" font-size="36" fill="#fff">Avancer de 15 secondes (alternatif)</text>
+  </g>
+  <text x="1024" y="820" font-family="Helvetica, Arial, sans-serif" font-size="52" font-weight="bold" fill="#ffcc00" text-anchor="middle">VOLUME</text>
+  <g transform="translate(300, 890)">
+    <text x="0" y="0" font-family="Monaco, Courier, monospace" font-size="40" fill="#b8860b" font-weight="bold">↑</text>
+    <text x="350" y="0" font-family="Helvetica, Arial, sans-serif" font-size="36" fill="#fff">Augmenter le volume</text>
+    <text x="0" y="70" font-family="Monaco, Courier, monospace" font-size="40" fill="#8b0000" font-weight="bold">↓</text>
+    <text x="350" y="70" font-family="Helvetica, Arial, sans-serif" font-size="36" fill="#fff">Diminuer le volume</text>
+  </g>
+  <text x="1024" y="1080" font-family="Helvetica, Arial, sans-serif" font-size="52" font-weight="bold" fill="#ffcc00" text-anchor="middle">INFORMATION &amp; PAROLES</text>
+  <g transform="translate(300, 1150)">
+    <text x="0" y="0" font-family="Monaco, Courier, monospace" font-size="40" fill="#1e90ff" font-weight="bold">I</text>
+    <text x="350" y="0" font-family="Helvetica, Arial, sans-serif" font-size="36" fill="#fff">Afficher info piste</text>
+    <text x="0" y="70" font-family="Monaco, Courier, monospace" font-size="40" fill="#1e90ff" font-weight="bold">L</text>
+    <text x="350" y="70" font-family="Helvetica, Arial, sans-serif" font-size="36" fill="#fff">Basculer paroles</text>
+    <text x="0" y="140" font-family="Monaco, Courier, monospace" font-size="40" fill="#9370db" font-weight="bold">N</text>
+    <text x="350" y="140" font-family="Helvetica, Arial, sans-serif" font-size="36" fill="#fff">Page paroles suivante</text>
+    <text x="0" y="210" font-family="Monaco, Courier, monospace" font-size="40" fill="#9370db" font-weight="bold">B</text>
+    <text x="350" y="210" font-family="Helvetica, Arial, sans-serif" font-size="36" fill="#fff">Page paroles précédente</text>
+  </g>
+  <g transform="translate(1100, 1150)">
+    <text x="0" y="0" font-family="Monaco, Courier, monospace" font-size="40" fill="#ff6347" font-weight="bold">Shift + V</text>
+    <text x="300" y="0" font-family="Helvetica, Arial, sans-serif" font-size="36" fill="#fff">Basculer mode verbose</text>
+    <text x="0" y="70" font-family="Monaco, Courier, monospace" font-size="40" fill="#ff6347" font-weight="bold">Ctrl + C</text>
+    <text x="300" y="70" font-family="Helvetica, Arial, sans-serif" font-size="36" fill="#fff">Quitter serveur CoverFrame</text>
+  </g>
+  <text x="1024" y="1490" font-family="Helvetica, Arial, sans-serif" font-size="28" fill="#888" text-anchor="middle">CoverFrame v28-12-2025 | Pour utilisation desktop/navigateur avec clavier</text>
+</svg>

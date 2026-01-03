@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="2048" height="2560" viewBox="0 0 2048 2560" xmlns="http://www.w3.org/2000/svg">
+  <rect width="2048" height="2560" fill="#1a1a1a"/>
+  <text x="1024" y="100" font-family="Helvetica, Arial, sans-serif" font-size="72" font-weight="bold" fill="#ffcc00" text-anchor="middle">Guida Tattile CoverFrame</text>
+  <text x="1024" y="220" font-family="Helvetica, Arial, sans-serif" font-size="48" font-weight="bold" fill="#ffcc00" text-anchor="middle">MODALITÀ COPERTINA - ZONE TATTILI</text>
+  <g transform="translate(124, 300)">
+    <rect x="0" y="0" width="1800" height="240" fill="#b8860b" stroke="#555" stroke-width="3"/>
+    <text x="900" y="80" font-family="Helvetica, Arial, sans-serif" font-size="48" font-weight="bold" fill="#000" text-anchor="middle">VOLUME +</text>
+    <text x="900" y="140" font-family="Helvetica, Arial, sans-serif" font-size="32" fill="#000" text-anchor="middle">Alto 20%</text>
+    <text x="900" y="190" font-family="Helvetica, Arial, sans-serif" font-size="28" fill="#000" text-anchor="middle" font-style="italic">Toccare per aumentare</text>
+    <rect x="0" y="240" width="450" height="720" fill="#1e3a5f" stroke="#555" stroke-width="3"/>
+    <text x="225" y="440" font-family="Helvetica, Arial, sans-serif" font-size="42" font-weight="bold" fill="#fff" text-anchor="middle">INDIETRO</text>
+    <text x="225" y="500" font-family="Helvetica, Arial, sans-serif" font-size="42" font-weight="bold" fill="#fff" text-anchor="middle">15s</text>
+    <text x="225" y="900" font-family="Helvetica, Arial, sans-serif" font-size="28" fill="#fff" text-anchor="middle">Sinistra 25%</text>
+    <rect x="450" y="240" width="900" height="720" fill="#2a2a2a" stroke="#555" stroke-width="3"/>
+    <text x="900" y="360" font-family="Helvetica, Arial, sans-serif" font-size="52" font-weight="bold" fill="#fff" text-anchor="middle">PAUSA</text>
+    <text x="900" y="420" font-family="Helvetica, Arial, sans-serif" font-size="32" fill="#fff" text-anchor="middle">Centro 50% (25%-75%)</text>
+    <text x="900" y="470" font-family="Helvetica, Arial, sans-serif" font-size="28" fill="#ccc" text-anchor="middle" font-style="italic">Toccare per pausa/play</text>
+    <polygon points="550,550 500,580 550,610" fill="#ff69b4"/>
+    <text x="570" y="585" font-family="Helvetica, Arial, sans-serif" font-size="28" fill="#ff69b4">← Traccia Prec.</text>
+    <polygon points="1250,550 1300,580 1250,610" fill="#ff69b4"/>
+    <text x="1010" y="625" font-family="Helvetica, Arial, sans-serif" font-size="28" fill="#ff69b4">Traccia Succ. →</text>
+    <polygon points="880,700 900,680 920,700" fill="#90ee90"/>
+    <text x="770" y="730" font-family="Helvetica, Arial, sans-serif" font-size="28" fill="#90ee90">↑ Testo</text>
+    <polygon points="880,840 900,860 920,840" fill="#90ee90"/>
+    <text x="950" y="850" font-family="Helvetica, Arial, sans-serif" font-size="28" fill="#90ee90">↓ Info</text>
+    <rect x="1350" y="240" width="450" height="720" fill="#0d5f4e" stroke="#555" stroke-width="3"/>
+    <text x="1575" y="440" font-family="Helvetica, Arial, sans-serif" font-size="42" font-weight="bold" fill="#fff" text-anchor="middle">AVANTI</text>
+    <text x="1575" y="500" font-family="Helvetica, Arial, sans-serif" font-size="42" font-weight="bold" fill="#fff" text-anchor="middle">15s</text>
+    <text x="1575" y="900" font-family="Helvetica, Arial, sans-serif" font-size="28" fill="#fff" text-anchor="middle">Destra 25%</text>
+    <rect x="0" y="960" width="1800" height="240" fill="#8b0000" stroke="#555" stroke-width="3"/>
+    <text x="900" y="1040" font-family="Helvetica, Arial, sans-serif" font-size="48" font-weight="bold" fill="#fff" text-anchor="middle">VOLUME −</text>
+    <text x="900" y="1100" font-family="Helvetica, Arial, sans-serif" font-size="32" fill="#fff" text-anchor="middle">Basso 20%</text>
+    <text x="900" y="1150" font-family="Helvetica, Arial, sans-serif" font-size="28" fill="#fff" text-anchor="middle" font-style="italic">Toccare per diminuire</text>
+  </g>
+  <text x="1024" y="1620" font-family="Helvetica, Arial, sans-serif" font-size="48" font-weight="bold" fill="#ffcc00" text-anchor="middle">GESTI CENTRALI</text>
+  <g transform="translate(200, 1680)">
+    <text x="0" y="0" font-family="Helvetica, Arial, sans-serif" font-size="32" fill="#fff">👆 Toccare</text>
+    <text x="450" y="0" font-family="Helvetica, Arial, sans-serif" font-size="32" fill="#fff">→ Pausa / Play</text>
+    <text x="0" y="50" font-family="Helvetica, Arial, sans-serif" font-size="32" fill="#ff69b4">⬅️ Scorrere Sinistra</text>
+    <text x="450" y="50" font-family="Helvetica, Arial, sans-serif" font-size="32" fill="#ff69b4">→ Traccia Precedente</text>
+    <text x="0" y="100" font-family="Helvetica, Arial, sans-serif" font-size="32" fill="#ff69b4">➡️ Scorrere Destra</text>
+    <text x="450" y="100" font-family="Helvetica, Arial, sans-serif" font-size="32" fill="#ff69b4">→ Traccia Successiva</text>
+    <text x="0" y="150" font-family="Helvetica, Arial, sans-serif" font-size="32" fill="#90ee90">⬆️ Scorrere Su</text>
+    <text x="450" y="150" font-family="Helvetica, Arial, sans-serif" font-size="32" fill="#90ee90">→ Mostra Testo</text>
+    <text x="0" y="200" font-family="Helvetica, Arial, sans-serif" font-size="32" fill="#90ee90">⬇️ Scorrere Giù</text>
+    <text x="450" y="200" font-family="Helvetica, Arial, sans-serif" font-size="32" fill="#90ee90">→ Mostra Info</text>
+  </g>
+  <text x="1024" y="2040" font-family="Helvetica, Arial, sans-serif" font-size="48" font-weight="bold" fill="#ffcc00" text-anchor="middle">MODALITÀ NAVIGAZIONE</text>
+  <g transform="translate(200, 2100)">
+    <text x="0" y="0" font-family="Helvetica, Arial, sans-serif" font-size="32" font-weight="bold" fill="#ffcc00">Navigazione:</text>
+    <text x="0" y="50" font-family="Helvetica, Arial, sans-serif" font-size="28" fill="#fff">👆 Toccare Traccia  → Riproduci Traccia</text>
+    <text x="0" y="90" font-family="Helvetica, Arial, sans-serif" font-size="28" fill="#fff">👆 Toccare Cartella → Apri Cartella</text>
+    <text x="0" y="150" font-family="Helvetica, Arial, sans-serif" font-size="32" font-weight="bold" fill="#ffcc00">Menu Contestuali (Pressione Lunga):</text>
+    <text x="0" y="200" font-family="Helvetica, Arial, sans-serif" font-size="28" fill="#ff69b4">Traccia: Riproduci questa • Riproduci da qui</text>
+    <text x="0" y="240" font-family="Helvetica, Arial, sans-serif" font-size="28" fill="#90ee90">Cartella: Riproduci Cartella • Mescola Cartella</text>
+  </g>
+  <text x="1024" y="2510" font-family="Helvetica, Arial, sans-serif" font-size="28" fill="#888" text-anchor="middle">CoverFrame v28-12-2025 | Lettore musicale tattile per iPad</text>
+</svg>

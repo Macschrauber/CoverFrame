@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="2048" height="2560" viewBox="0 0 2048 2560" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="2048" height="2560" fill="#1a1a1a"/>
+  
+  <!-- Title -->
+  <text x="1024" y="100" font-family="Helvetica, Arial, sans-serif" font-size="72" font-weight="bold" 
+        fill="#ffcc00" text-anchor="middle">CoverFrame Touch Guide</text>
+  
+  <!-- SECTION 1: Touch Zones Diagram -->
+  <text x="1024" y="220" font-family="Helvetica, Arial, sans-serif" font-size="48" font-weight="bold" 
+        fill="#ffcc00" text-anchor="middle">COVER MODE - TOUCH ZONES</text>
+  
+  <!-- Zone diagram container -->
+  <g transform="translate(124, 300)">
+    <!-- VOLUME UP (Top 20%) -->
+    <rect x="0" y="0" width="1800" height="240" fill="#b8860b" stroke="#555" stroke-width="3"/>
+    <text x="900" y="80" font-family="Helvetica, Arial, sans-serif" font-size="48" font-weight="bold" 
+          fill="#000" text-anchor="middle">VOLUME UP</text>
+    <text x="900" y="140" font-family="Helvetica, Arial, sans-serif" font-size="32" 
+          fill="#000" text-anchor="middle">Top 20%</text>
+    <text x="900" y="190" font-family="Helvetica, Arial, sans-serif" font-size="28" 
+          fill="#000" text-anchor="middle" font-style="italic">Tap to increase volume</text>
+    
+    <!-- Middle row with three zones -->
+    <!-- SKIP BACK 15s (Left 25%) -->
+    <rect x="0" y="240" width="450" height="720" fill="#1e3a5f" stroke="#555" stroke-width="3"/>
+    <text x="225" y="440" font-family="Helvetica, Arial, sans-serif" font-size="42" font-weight="bold" 
+          fill="#fff" text-anchor="middle">SKIP</text>
+    <text x="225" y="500" font-family="Helvetica, Arial, sans-serif" font-size="42" font-weight="bold" 
+          fill="#fff" text-anchor="middle">BACK</text>
+    <text x="225" y="560" font-family="Helvetica, Arial, sans-serif" font-size="42" font-weight="bold" 
+          fill="#fff" text-anchor="middle">15s</text>
+    <text x="225" y="900" font-family="Helvetica, Arial, sans-serif" font-size="28" 
+          fill="#fff" text-anchor="middle">Left 25%</text>
+    
+    <!-- CENTER PAUSE (Middle 50%) -->
+    <rect x="450" y="240" width="900" height="720" fill="#2a2a2a" stroke="#555" stroke-width="3"/>
+    <text x="900" y="360" font-family="Helvetica, Arial, sans-serif" font-size="52" font-weight="bold" 
+          fill="#fff" text-anchor="middle">PAUSE</text>
+    <text x="900" y="420" font-family="Helvetica, Arial, sans-serif" font-size="32" 
+          fill="#fff" text-anchor="middle">Middle 50% (25%-75%)</text>
+    <text x="900" y="470" font-family="Helvetica, Arial, sans-serif" font-size="28" 
+          fill="#ccc" text-anchor="middle" font-style="italic">Tap to pause/play</text>
+    
+    <!-- Swipe arrows -->
+    <!-- Left arrow -->
+    <polygon points="550,550 500,580 550,610" fill="#ff69b4"/>
+    <text x="570" y="585" font-family="Helvetica, Arial, sans-serif" font-size="28" 
+          fill="#ff69b4">← Prev Track</text>
+    
+    <!-- Right arrow -->
+    <polygon points="1250,550 1300,580 1250,610" fill="#ff69b4"/>
+    <text x="1030" y="625" font-family="Helvetica, Arial, sans-serif" font-size="28" 
+          fill="#ff69b4">Next Track →</text>
+    
+    <!-- Up arrow -->
+    <polygon points="880,700 900,680 920,700" fill="#90ee90"/>
+    <text x="770" y="730" font-family="Helvetica, Arial, sans-serif" font-size="28" 
+          fill="#90ee90">↑ Lyrics</text>
+    
+    <!-- Down arrow -->
+    <polygon points="880,840 900,860 920,840" fill="#90ee90"/>
+    <text x="950" y="850" font-family="Helvetica, Arial, sans-serif" font-size="28" 
+          fill="#90ee90">↓ Info</text>
+    
+    <!-- SKIP 15s (Right 25%) -->
+    <rect x="1350" y="240" width="450" height="720" fill="#0d5f4e" stroke="#555" stroke-width="3"/>
+    <text x="1575" y="440" font-family="Helvetica, Arial, sans-serif" font-size="42" font-weight="bold" 
+          fill="#fff" text-anchor="middle">SKIP</text>
+    <text x="1575" y="500" font-family="Helvetica, Arial, sans-serif" font-size="42" font-weight="bold" 
+          fill="#fff" text-anchor="middle">15s</text>
+    <text x="1575" y="900" font-family="Helvetica, Arial, sans-serif" font-size="28" 
+          fill="#fff" text-anchor="middle">Right 25%</text>
+    
+    <!-- VOLUME DOWN (Bottom 20%) -->
+    <rect x="0" y="960" width="1800" height="240" fill="#8b0000" stroke="#555" stroke-width="3"/>
+    <text x="900" y="1040" font-family="Helvetica, Arial, sans-serif" font-size="48" font-weight="bold" 
+          fill="#fff" text-anchor="middle">VOLUME DOWN</text>
+    <text x="900" y="1100" font-family="Helvetica, Arial, sans-serif" font-size="32" 
+          fill="#fff" text-anchor="middle">Bottom 20%</text>
+    <text x="900" y="1150" font-family="Helvetica, Arial, sans-serif" font-size="28" 
+          fill="#fff" text-anchor="middle" font-style="italic">Tap to decrease volume</text>
+  </g>
+  
+  <!-- SECTION 2: Center Gestures -->
+  <text x="1024" y="1620" font-family="Helvetica, Arial, sans-serif" font-size="48" font-weight="bold" 
+        fill="#ffcc00" text-anchor="middle">CENTER ZONE GESTURES</text>
+  
+  <g transform="translate(200, 1680)">
+    <text x="0" y="0" font-family="Helvetica, Arial, sans-serif" font-size="32" fill="#fff">
+      👆 Tap</text>
+    <text x="450" y="0" font-family="Helvetica, Arial, sans-serif" font-size="32" fill="#fff">
+      → Pause / Play</text>
+    
+    <text x="0" y="50" font-family="Helvetica, Arial, sans-serif" font-size="32" fill="#ff69b4">
+      ⬅️ Swipe Left</text>
+    <text x="450" y="50" font-family="Helvetica, Arial, sans-serif" font-size="32" fill="#ff69b4">
+      → Previous Track</text>
+    
+    <text x="0" y="100" font-family="Helvetica, Arial, sans-serif" font-size="32" fill="#ff69b4">
+      ➡️ Swipe Right</text>
+    <text x="450" y="100" font-family="Helvetica, Arial, sans-serif" font-size="32" fill="#ff69b4">
+      → Next Track</text>
+    
+    <text x="0" y="150" font-family="Helvetica, Arial, sans-serif" font-size="32" fill="#90ee90">
+      ⬆️ Swipe Up</text>
+    <text x="450" y="150" font-family="Helvetica, Arial, sans-serif" font-size="32" fill="#90ee90">
+      → Show Lyrics</text>
+    
+    <text x="0" y="200" font-family="Helvetica, Arial, sans-serif" font-size="32" fill="#90ee90">
+      ⬇️ Swipe Down</text>
+    <text x="450" y="200" font-family="Helvetica, Arial, sans-serif" font-size="32" fill="#90ee90">
+      → Show Info</text>
+  </g>
+  
+  <!-- SECTION 3: Browser Mode -->
+  <text x="1024" y="2040" font-family="Helvetica, Arial, sans-serif" font-size="48" font-weight="bold" 
+        fill="#ffcc00" text-anchor="middle">BROWSER MODE</text>
+  
+  <g transform="translate(200, 2100)">
+    <text x="0" y="0" font-family="Helvetica, Arial, sans-serif" font-size="32" font-weight="bold" fill="#ffcc00">
+      Navigation:</text>
+    <text x="0" y="50" font-family="Helvetica, Arial, sans-serif" font-size="28" fill="#fff">
+      👆 Tap Track  → Play Track</text>
+    <text x="0" y="90" font-family="Helvetica, Arial, sans-serif" font-size="28" fill="#fff">
+      👆 Tap Folder → Open Folder</text>
+    
+    <text x="0" y="150" font-family="Helvetica, Arial, sans-serif" font-size="32" font-weight="bold" fill="#ffcc00">
+      Context Menus (Long Press):</text>
+    <text x="0" y="200" font-family="Helvetica, Arial, sans-serif" font-size="28" fill="#ff69b4">
+      Track: Play this track • Play from here</text>
+    <text x="0" y="240" font-family="Helvetica, Arial, sans-serif" font-size="28" fill="#90ee90">
+      Folder: Play Folder • Shuffle Folder</text>
+  </g>
+  
+  <!-- Footer -->
+  <text x="1024" y="2510" font-family="Helvetica, Arial, sans-serif" font-size="28" 
+        fill="#888" text-anchor="middle">CoverFrame v28-12-2025 | Touch-optimized music player for iPad</text>
+</svg>
