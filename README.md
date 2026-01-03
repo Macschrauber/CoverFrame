@@ -250,3 +250,8 @@ For issues, questions, or contributions:
 ---
 
 **Enjoy your living album art frame!** 🎵✨
+
+---
+
+**If you want to support me with a little donation:
+[Donations](https://github.com/Macschrauber/Macschrauber-s-Rom-Dump/blob/main/donations.md)
