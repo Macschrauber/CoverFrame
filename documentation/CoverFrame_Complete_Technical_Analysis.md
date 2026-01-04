@@ -220,7 +220,7 @@ Generates HTML file browser with:
 
 ---
 
-#### B. **indexios4.html** (pre iOS 9.3 Compatible)
+#### B. **indexios4.html** (pre-iOS 9.3 Compatible)
 **Size:** 7KB  
 **Purpose:** Stripped-down version for oldest iPads
 
@@ -860,7 +860,7 @@ cd "$HOME/Sites"
 - Open Safari
 - Navigate to `http://XXX.XXX.XXX.XXX:8000/` (your Mac's IP)
 - Add to Home Screen for web app mode
-- Or use `http://XXX.XXX.XXX.XXX:8000/indexios4.html` for pre iOS 9.3
+- Or use `http://XXX.XXX.XXX.XXX:8000/indexios4.html` for pre-iOS 9.3 devices
 
 ---
 
