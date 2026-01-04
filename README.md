@@ -19,9 +19,9 @@ CoverFrame transforms any old display device—iPad, Android tablet, old iPhone,
 ## What You Need
 
 ### macOS Server (Music Player)
-- **macOS**: 10.9 Mavericks or later
+- **macOS**: 10.15 or newer (older OS needs manual Python3 setup)
 - **Processor**: Intel or Apple Silicon
-- **Music Player**: Vox Player (recommended) or any music player
+- **Music Player**: Vox Player (recommended), Apple Music, iTunes
 - **Dependencies**: 
   - Python 3 (built-in on macOS 10.15+)
   - ImageMagick (for album art processing)
@@ -160,7 +160,7 @@ CoverFrame/
 │   ├── CoverFrame_starter     # Launch script
 │   ├── CoverFrame_server      # HTTP server
 │   ├── index.html             # Main interface
-│   ├── indexios4.html         # iOS 9.3-11 interface
+│   ├── indexios4.html         # pre iOS 9.3 simplified interface
 │   └── browser.html           # Desktop browser interface
 ├── scripts/                   # Control scripts (play, pause, etc.)
 ├── tools/                     # Utilities (position adjuster, shadowcopy)
@@ -191,6 +191,7 @@ CoverFrame is designed with these principles:
 - **Manual Organization**: No iTunes/Music.app database integration
 - **Same Network**: Requires server and display on same Wi-Fi
 - **Vox Player**: Best experience with Vox (other players via scripts)
+- **Remote Control**: Website controls audio, does not play it. There is local website playing for pre-listening. To get full Audio playing, use Airplay devices or use Airfoil (payed App) to play on iOs Device.
 
 ## Troubleshooting
 
@@ -224,8 +225,8 @@ brew install imagemagick
 ### Display device won't connect
 1. Verify same Wi-Fi network
 2. Check firewall settings on macOS
-3. Try `http://IP:8000` instead of hostname
-4. For pre iOS 9.3-11, use `indexios4.html`
+3. Try `http://ServerIP:8000` instead of hostname
+4. For pre iOS 9.3, use `indexios4.html`
 
 ## License
 
@@ -240,8 +241,8 @@ Macschrauber (known for Macschrauber's Rom Dump, the major firmware tool for Int
 - Built with love for music lovers who appreciate album art
 - Inspired by the desire to give old devices new life
 - Thanks to the open-source community for ImageMagick, kid3, and jq
-- For those who care: used AI. Perplexity, Claude, chatgpt, Gemini
-- Documentation and summaries are written by Claude. We are in 2026.
+- For those who care: Used orchestrated AI. Perplexity, Claude, chatgpt, Gemini.
+- Documentation and summaries are written by Claude and were edited by me. We are in 2026.
 
 ## Support
 
