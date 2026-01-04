@@ -366,9 +366,6 @@ Automatically skips:
 ## Requirements
 
 - **Bash 3.2+** (compatible with macOS default)
-- **Optional:** `alias_resolve` tool for optimal Finder alias performance
-  - Install: `brew install al45tair/alias/alias`
-  - Without it: falls back to slower individual resolution
 
 ## Exit Codes
 
