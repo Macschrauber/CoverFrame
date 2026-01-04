@@ -1,9 +1,9 @@
 # CoverFrame: Complete Technical Analysis
 ## Transforming Obsolete iPads into Living Album Art Frames
 
-**Project Date:** December 21, 2025  
+**Project Date:** January 3, 2026  
 **Primary Purpose:** Repurpose vintage iOS devices (iPad 3, iPad 4 running iOS 9.3+) as dedicated music visualization and control terminals  
-**Target Platform:** macOS 10.9+ with Bash 3.2  
+**Target Platform:** macOS 10.13+ with Bash 3.2  
 **Supported Players:** VOX (preferred), Apple Music, iTunes (legacy)
 
 ---
@@ -17,7 +17,7 @@ CoverFrame resurrects obsolete tablets by transforming them into **"living album
 2. **Touch-optimized playback control** (no keyboard/mouse needed)
 3. **Synchronized lyrics display** (karaoke-style or reading mode)
 4. **File browsing** (navigate 15,000+ album collections)
-5. **Minimal resource usage** (works on iPad 4 with iOS 9.3)
+5. **Minimal resource usage** (works on iPad 3 with iOS 9.3)
 
 ### Design Philosophy
 - **Vinyl-like interaction**: Make digital music feel tactile and visual
@@ -37,7 +37,6 @@ CoverFrame resurrects obsolete tablets by transforming them into **"living album
 ┌─────────────────────────────────────────────────────────┐
 │  CLIENT LAYER (iPad/Browser)                            │
 │  - index.html (fullscreen cover display)                │
-│  - indexios4.html (iOS 9.3 compatible version)          │
 │  - browser.html (file browser + controls)               │
 └──────────────────┬──────────────────────────────────────┘
                    │ HTTP GET/POST
@@ -56,9 +55,9 @@ CoverFrame resurrects obsolete tablets by transforming them into **"living album
                    ▼
 ┌─────────────────────────────────────────────────────────┐
 │  BACKEND LAYER (Bash Scripts)                           │
-│  - CoverFrame_starter_v15-12-2025 (main orchestrator)   │
+│  - CoverFrame_starter (main orchestrator)               │
 │  - Player control scripts (play, pause, skip, etc.)     │
-│  - Lyrics system (scan, fetch, display)                 │
+│  - Lyrics system (scan, fetch)                          │
 │  - Cover management (variants, overlays)                │
 └──────────────────┬──────────────────────────────────────┘
                    │ AppleScript/osascript
@@ -66,7 +65,7 @@ CoverFrame resurrects obsolete tablets by transforming them into **"living album
 ┌─────────────────────────────────────────────────────────┐
 │  PLAYER LAYER                                           │
 │  - VOX / Apple Music / iTunes                           │
-│    • Controlled via AppleScript                         │
+│    • Controlled via AppleScript / voxctl                │
 │    • Reports state (playing/paused/stopped)             │
 │    • Provides track metadata                            │
 └─────────────────────────────────────────────────────────┘
@@ -115,7 +114,7 @@ $HOME/Sites/scripts/stopped.tag
 $HOME/Sites/scripts/lyrics.tag
 $HOME/Sites/scripts/lyrics_synced.tag
 $HOME/Sites/scripts/lyrics_skip.tag
-$HOME/Sites/cover.tag  # Contains track identifier
+$HOME/Sites/cover.tag
 $HOME/Sites/coverflow.tag  # Triggers slide animation
 ```
 
@@ -145,7 +144,7 @@ cmd_lyrics_renew.tag → fetch new lyrics
 
 **A. File Serving**
 - Serves HTML, CSS, JavaScript, images
-- Handles music file downloads for browser player
+- Handles music file downloads for internal browser player
 - Resolves macOS aliases using `alias_resolve` binary
 
 **B. Command Endpoint**
@@ -166,7 +165,7 @@ HEAD /scripts/lyrics_synced.tag → Returns 200 if synced lyrics active
 **D. Directory Listing**
 Generates HTML file browser with:
 - Audio file detection (MP3, FLAC, M4A, etc.)
-- Cover art extraction (.covercrop.tag, .coversquare.tag)
+- Cover art extraction (with orientation/zoom tag files or optional .background.jpg file)
 - Parent directory navigation
 - "Play locally" in-browser HTML5 player
 - Context menu (Play this, Play from here)
@@ -221,7 +220,7 @@ Generates HTML file browser with:
 
 ---
 
-#### B. **indexios4.html** (iOS 9.3 Compatible)
+#### B. **indexios4.html** (pre iOS 9.3 Compatible)
 **Size:** 7KB  
 **Purpose:** Stripped-down version for oldest iPads
 
@@ -230,7 +229,7 @@ Generates HTML file browser with:
 - Minimal JavaScript
 - Reduced animation complexity
 - Simpler polling logic
-- Works on iPad 3 & 4 with iOS 9.3
+- Works on ancient iOS devices
 
 ---
 
@@ -286,6 +285,9 @@ User can force source rotation via long-press:
 - Strict 50% fuzzy matching on album name
 - Critical for Live vs Studio distinction
 - Ensures LRC timing accuracy
+
+**Lyrics Quality:**
+- When 50% of the track title is not in the album, link lyrics and audio file to a suspicious lyrics folder for manual review.
 
 ---
 
@@ -484,11 +486,12 @@ cover_slideshow_stop.tag   # Force stop slideshow
 #### **shadowcopy** (36KB)
 - Creates shadow directory structure
 - Helps with alias resolution
-- Documented in `shadowcopy_documentation_28-11-2025.md`
+- Documented in `shadowcopy_documentation.md`
 
 #### **voxctl** (2.7KB)
+[voxctl](https://github.com/majjoha/voxctl)
 - VOX-specific controls
-- Disables VOXCloud (conflicts with local control)
+- CoverFrame Disables VOXCloud (conflicts with local control)
 
 #### **has_alias** (4.3KB)
 - Detects macOS alias files
@@ -590,7 +593,7 @@ with open('/tmp/webserver.log', 'a') as f:
 
 ```
 VOX playback state
-    ↓ (AppleScript query)
+    ↓ (voxctl query)
 CoverFrame_starter detects state change
     ↓ (writes tag file)
 $HOME/Sites/scripts/playing.tag created
@@ -778,7 +781,7 @@ done
 ### Prerequisites
 
 **macOS System:**
-- macOS 10.9 or later
+- macOS 10.13 or later
 - Bash 3.2 (built-in)
 - Python (built-in)
 - Built-in commands: `sips`, `osascript`, `stat`, `nc`, `xxd`
@@ -788,7 +791,7 @@ done
 - Apple Music
 - iTunes (legacy)
 
-**Optional:**
+**ID3-tag support:**
 - `kid3-cli` for metadata extraction (Homebrew: `brew install kid3`)
 - If not installed, uses VOX metadata extractor instead
 
@@ -845,19 +848,19 @@ cp alias_resolve "$HOME/Sites/scripts/"
 **1. Start CoverFrame**
 ```bash
 cd "$HOME/Sites"
-./CoverFrame_starter_v15-12-2025
+./CoverFrame_starter
 ```
 
 **2. Optional: Verbose Mode**
 ```bash
-./CoverFrame_starter_v15-12-2025 -v
+./CoverFrame_starter -v
 ```
 
 **3. Access from iPad**
 - Open Safari
-- Navigate to `http://192.168.1.XXX:8000/` (your Mac's IP)
+- Navigate to `http://XXX.XXX.XXX.XXX:8000/` (your Mac's IP)
 - Add to Home Screen for web app mode
-- Or use `http://192.168.1.XXX:8000/indexios4.html` for iOS 9.3
+- Or use `http://XXX.XXX.XXX.XXX:8000/indexios4.html` for pre iOS 9.3
 
 ---
 
@@ -1305,6 +1308,6 @@ Transform digital music consumption into a **tactile, visual experience** remini
 ---
 
 **Project Status:** ✅ Fully Functional  
-**Last Updated:** January 1, 2026  
+**Last Updated:** January 3, 2026  
 **Maintainer:** Macschrauber  
-**License:** Personal Project
+**License:** MIT
