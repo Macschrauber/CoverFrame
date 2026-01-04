@@ -171,7 +171,7 @@ CoverFrame/
 
 - **Installation**: This README
 - **Touch Gestures**: [Gesture Layout](documentation/CoverFrame_Gesture_Guide_Layout.md), [Gesture_Guide](documentation/CoverFrame_Gesture_Guide.svg) 
-- **Web Interface**: [Web Interface Documentation](documentation/CoverFrame%20Web%20Interface Documentation%2014-12-2025.md)
+- **Web Interface**: [Web Interface Documentation](CoverFrame%20Web%20Interface%20Documentation%2014-12-2025.md)
 - **Changelog**: `CoverFrame_server_and_browser_html_Changelog_20-12-2025.md`
 - **shadowcopy**: [shadowcopy](documentation/shadowcopy%20documentation%2028-11-2025.md)
 - **Technical Analysis**: [Complete Technical Analysis](documentation/CoverFrame_Complete_Technical_Analysis.md)
