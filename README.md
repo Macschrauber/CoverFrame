@@ -173,7 +173,8 @@ CoverFrame/
 - **Touch Gestures**: [Gesture Layout](documentation/CoverFrame_Gesture_Guide_Layout.md), [Gesture_Guide](documentation/CoverFrame_Gesture_Guide.svg) 
 - **Web Interface**: `CoverFrame_Web_Interface_Documentation_14-12-2025.md`
 - **Changelog**: `CoverFrame_server_and_browser_html_Changelog_20-12-2025.md`
-- **Technical Analysis**: `CoverFrame_Complete_Technical_Analysis.md`
+- **shadowcopy: [shadowcopy](documentation/shadowcopy documentation 28-11-2025.md)
+- **Technical Analysis**: [Complete Technical Analysis](documentation/CoverFrame_Complete_Technical_Analysis.md)
 
 ## Development Philosophy
 
