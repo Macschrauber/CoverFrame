@@ -42,22 +42,15 @@ Creates a mirror directory structure using symlinks instead of copying files. Pe
 - Letter-folder organization support via `-followalias`
 
 ## Installation
-
-```bash
-# Clone or download the script
-chmod +x shadowcopy20
-
-# Optional: Install alias_resolve for optimal performance
-# (Available from: https://github.com/al45tair/alias)
-brew install al45tair/alias/alias
-```
+- comes with CoverFrame
+- needs alias_resolve, what also comes with CoverFrame
 
 ## Usage
 
 ### Basic Syntax
 
 ```bash
-./shadowcopy20 [options] <source_path(s)> <shadow_path>
+./shadowcopy [options] <source_path(s)> <shadow_path>
 ```
 
 ### Common Options
@@ -82,7 +75,7 @@ brew install al45tair/alias/alias
 Create a shadow of a music collection:
 
 ```bash
-./shadowcopy20 \
+./shadowcopy \
   "/Volumes/FW300RAID/-A-" \
   "/Users/username/Sites/music/FW300SHADOW/"
 ```
@@ -98,7 +91,7 @@ Shadow: /Users/username/Sites/music/FW300SHADOW/-A-/Adagio/2009-Archangels in Bl
 Process an import folder containing Finder aliases:
 
 ```bash
-./shadowcopy20 \
+./shadowcopy \
   "/Volumes/FW300RAID/ Import to iTunes/Nov 2025" \
   "/Users/username/Sites/music/FW300SHADOW/"
 ```
@@ -122,7 +115,7 @@ Shadow structure (preserves import folder structure):
 Process import folder and create shadow at resolved locations:
 
 ```bash
-./shadowcopy20 -followalias \
+./shadowcopy -followalias \
   "/Volumes/FW300RAID/ Import to iTunes/Nov 2025" \
   "/Users/username/Sites/music/FW300SHADOW/"
 ```
@@ -155,7 +148,7 @@ Shadow structure (follows resolved paths):
 Preview changes before executing:
 
 ```bash
-./shadowcopy20 -dryrun -followalias \
+./shadowcopy -dryrun -followalias \
   "/Volumes/FW300RAID/ Import to iTunes/Nov 2025" \
   "/Users/username/Sites/music/FW300SHADOW/"
 ```
@@ -188,7 +181,7 @@ Would create symlink: /Users/username/Sites/music/FW300SHADOW/-A-/Adagio/2009-Ar
 Update existing shadow with new albums only (ultra-fast):
 
 ```bash
-./shadowcopy20 -followalias -onlyupdate -skipmtime \
+./shadowcopy -followalias -onlyupdate -skipmtime \
   "/Volumes/FW300RAID/ Import to iTunes/Nov 2025" \
   "/Users/username/Sites/music/FW300SHADOW/"
 ```
@@ -204,7 +197,7 @@ Update existing shadow with new albums only (ultra-fast):
 Mirror entire disk structure directly (no top-level folder):
 
 ```bash
-./shadowcopy20 -mirror \
+./shadowcopy -mirror \
   "/Volumes/FW300RAID/" \
   "/Users/username/Sites/music/FW300SHADOW/"
 ```
@@ -220,7 +213,7 @@ Shadow: /Users/username/Sites/music/FW300SHADOW/-A-/Artist/Album/  (no "FW300RAI
 Process multiple directories at once:
 
 ```bash
-./shadowcopy20 \
+./shadowcopy \
   "/Volumes/FW300RAID/-A-" \
   "/Volumes/FW300RAID/-B-" \
   "/Volumes/FW300RAID/-C-" \
@@ -232,7 +225,7 @@ Process multiple directories at once:
 Use shell glob patterns for batch processing:
 
 ```bash
-./shadowcopy20 \
+./shadowcopy \
   /Volumes/FW300RAID/-* \
   "/Users/username/Sites/music/FW300SHADOW/"
 ```
@@ -250,17 +243,17 @@ Processes all letter folders: `-A-`, `-B-`, `-C-`, etc.
 #      └─ New-Album-2 [alias]
 
 # 2. Preview what will be created
-./shadowcopy20 -dryrun -followalias \
+./shadowcopy -dryrun -followalias \
   "/Volumes/FW300RAID/ Import to iTunes/Nov 2025" \
   "/Users/username/Sites/music/FW300SHADOW/"
 
 # 3. Create shadows at resolved locations
-./shadowcopy20 -followalias \
+./shadowcopy -followalias \
   "/Volumes/FW300RAID/ Import to iTunes/Nov 2025" \
   "/Users/username/Sites/music/FW300SHADOW/"
 
 # 4. Later: Quick incremental update for new additions
-./shadowcopy20 -followalias -onlyupdate -skipmtime \
+./shadowcopy -followalias -onlyupdate -skipmtime \
   "/Volumes/FW300RAID/ Import to iTunes/Nov 2025" \
   "/Users/username/Sites/music/FW300SHADOW/"
 ```
@@ -269,12 +262,12 @@ Processes all letter folders: `-A-`, `-B-`, `-C-`, etc.
 
 ```bash
 # Initial full shadow creation
-./shadowcopy20 -mirror \
+./shadowcopy -mirror \
   "/Volumes/FW300RAID/" \
   "/Users/username/Sites/music/FW300SHADOW/"
 
 # Regular incremental updates (fast)
-./shadowcopy20 -mirror -onlyupdate -skipmtime \
+./shadowcopy -mirror -onlyupdate -skipmtime \
   "/Volumes/FW300RAID/" \
   "/Users/username/Sites/music/FW300SHADOW/"
 ```
@@ -352,7 +345,7 @@ Detects and warns about multiple instances:
 ```
 ⚠️ CONCURRENT EXECUTION DETECTED!
 Found separate running instances of this script:
-  PID 12345: ./shadowcopy20 /Volumes/FW300RAID/ ...
+  PID 12345: ./shadowcopy /Volumes/FW300RAID/ ...
 
 Options:
   1. Press Ctrl+C to abort this instance
