@@ -116,7 +116,7 @@ Most users won't need Genius - the included sources cover most songs with time-s
 - Play/Pause: Tap center
 - Next/Previous: Swipe left/right
 - Volume: Swipe up/down
-- Skip/Back 15 seconds: tap left/right
+- Skip/Back 15 seconds: Tap left/right
 - See full gesture documentation in `/mnt/project/CoverFrame_touch_zones_16-12-2025.md`
 
 ### Playback Control
