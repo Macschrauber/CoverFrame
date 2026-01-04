@@ -32,8 +32,6 @@
 ## MIDDLE SECTION: ADDITIONAL COVER MODE GESTURES
 
 **Other Gestures (Center Area):**
-- 🤲 **Pinch out**: Zoom in on cover art
-- 🤲 **Pinch in**: Zoom out
 - 👆 **Long press** (hold): Toggle lyrics display
 
 **Keyboard Shortcuts** (when using browser/desktop):
@@ -99,4 +97,4 @@
 
 ---
 
-**CoverFrame v28-12-2025** | Touch-optimized music player for iPad
+**CoverFrame** | Touch-optimized music player for iPad
