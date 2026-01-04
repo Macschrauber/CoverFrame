@@ -79,7 +79,7 @@ The installer supports:
 3. **Open on your display device**:
    - Connect to the same Wi-Fi network
    - Open browser to: `http://YOUR_MAC_IP:8000`
-   - For pre iOS 9.3: Use `http://YOUR_MAC_IP:8000/indexios4.html`
+   - For pre-iOS 9.3 devices: Use `http://YOUR_MAC_IP:8000/indexios4.html`
 
 ## Lyrics Sources
 
@@ -136,7 +136,7 @@ Most users won't need Genius - the included sources cover most songs with time-s
 ### Special Handling
 - **macOS < 11**: Installer detects Qt6 incompatibility and links Qt5 kid3-cli
 - **Apple Silicon**: Installer prefers ARM64 binaries for native performance
-- **Old iOS**: Special interface (`indexios4.html`) for iOS older than 9.3
+- **Old iOS**: Special interface (`indexios4.html`) for iOS versions older than 9.3
 
 ## Architecture
 
@@ -160,7 +160,7 @@ CoverFrame/
 │   ├── CoverFrame_starter     # Launch script
 │   ├── CoverFrame_server      # HTTP server
 │   ├── index.html             # Main interface
-│   ├── indexios4.html         # pre iOS 9.3 simplified interface
+│   ├── indexios4.html         # pre-iOS 9.3 simplified interface
 │   └── browser.html           # Desktop browser interface
 ├── scripts/                   # Control scripts (play, pause, etc.)
 ├── tools/                     # Utilities (position adjuster, shadowcopy)
@@ -191,7 +191,7 @@ CoverFrame is designed with these principles:
 - **Manual Organization**: No iTunes/Music.app database integration
 - **Same Network**: Requires server and display on same Wi-Fi
 - **Vox Player**: Best experience with Vox (other players via scripts)
-- **Remote Control**: Website controls audio, does not play it. There is local website playing for pre-listening. To get full Audio playing, use Airplay devices or use Airfoil (payed App) to play on iOs Device.
+- **Remote Control**: Website controls audio, does not play it. There is local website playing for pre-listening. To get full audio playing, use Airplay devices or use Airfoil (paid app) to play on iOS device.
 
 ## Troubleshooting
 
@@ -226,7 +226,7 @@ brew install imagemagick
 1. Verify same Wi-Fi network
 2. Check firewall settings on macOS
 3. Try `http://ServerIP:8000` instead of hostname
-4. For pre iOS 9.3, use `indexios4.html`
+4. For pre-iOS 9.3 devices, use `indexios4.html`
 
 ## License
 
