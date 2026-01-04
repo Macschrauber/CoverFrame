@@ -5,7 +5,7 @@
 CoverFrame is a web-based remote control interface for a music player server. It displays album artwork and provides intuitive touch/mouse/keyboard controls for playback, navigation, volume adjustment, and lyrics management.
 
 **Version:** v30h  
-**Compatibility:** Modern browsers, iOS 10+ (iPad 4 tested), touch and desktop devices
+**Compatibility:** Modern browsers, iOS 9.3+ (iPad 3, iPad 4 tested), touch and desktop devices
 
 ---
 
@@ -279,7 +279,7 @@ var pauseCooldownMs = 350;  // Prevent duplicate pause commands
 ## Browser Compatibility
 
 ### Tested Platforms
-- ✅ iOS 10+ (iPad 4)
+- ✅ iOS 9.3+ (iPad 3, iPad 4)
 - ✅ Modern Chrome/Firefox/Safari
 - ✅ Touch and desktop devices
 
