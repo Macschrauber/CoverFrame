@@ -16,10 +16,10 @@ The CoverFrame lyrics tools consist of two Bash scripts that work together to au
 
 ✅ **Two Lyrics Sources** (no API keys required!)
 - [lrclib.net](https://lrclib.net) - Time-synced lyrics (LRC format)
-- QQ Music - Chinese lyrics database with international coverage
+- [QQ Music](https://y.qq.com) - Chinese lyrics database with international coverage
 
 ✅ **Genius** (API key required, you can get it for free)
-- Genius (optional) - Popular lyrics website
+- [Genius](https://genius.com) (optional) - Popular lyrics website
 
 ✅ **Time-Synced Lyrics** - Prefers `.lrc` format with millisecond timestamps  
 ✅ **Smart Album Matching** - Jaccard similarity for accurate results  
